@@ -1,5 +1,6 @@
 import { isBrowser } from './helpers'
 import { SupportedStorage } from './types'
+import Taro from '@tarojs/taro';
 
 const localStorageAdapter: SupportedStorage = {
   getItem: (key) => {
@@ -7,21 +8,21 @@ const localStorageAdapter: SupportedStorage = {
       return null
     }
 
-    return globalThis.localStorage.getItem(key)
+    return Taro.getStorageSync(key)
   },
   setItem: (key, value) => {
     if (!isBrowser()) {
       return
     }
 
-    globalThis.localStorage.setItem(key, value)
+    Taro.setStorageSync(key, value)
   },
   removeItem: (key) => {
     if (!isBrowser()) {
       return
     }
 
-    globalThis.localStorage.removeItem(key)
+    Taro.removeStorageSync(key)
   },
 }
 
