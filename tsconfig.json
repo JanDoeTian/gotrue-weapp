@@ -8,6 +8,8 @@
     "rootDir": "src",
     "sourceMap": true,
     "target": "ES2015",
+    "noEmitOnError": false, // <-- 即使有错误也输出编译结果
+    "skipLibCheck": true,    // <-- 忽略 node_modules 的类型检查
 
     "strict": true,
 

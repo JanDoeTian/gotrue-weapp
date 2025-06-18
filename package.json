@@ -1,5 +1,5 @@
 {
-  "name": "@supabase/gotrue-js-weapp",
+  "name": "@supabase/gotrue-js",
   "version": "1.0.0",
   "description": "Weapp GoTrue client",
   "keywords": [
