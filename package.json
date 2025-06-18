@@ -1,7 +1,7 @@
 {
-  "name": "@supabase/gotrue-js",
-  "version": "0.0.0",
-  "description": "Isomorphic GoTrue client",
+  "name": "@supabase/gotrue-js-weapp",
+  "version": "1.0.0",
+  "description": "Weapp GoTrue client",
   "keywords": [
     "gotrue",
     "supabase",
