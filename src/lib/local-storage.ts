@@ -1,6 +1,6 @@
 import { isBrowser } from './helpers'
 import { SupportedStorage } from './types'
-import Taro from '@tarojs/taro';
+import Taro from '@tarojs/taro'
 
 const localStorageAdapter: SupportedStorage = {
   getItem: (key) => {
